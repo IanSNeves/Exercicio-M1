@@ -54,6 +54,32 @@ main .article-img {
     height: auto;
 }
 
+main .article-container {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .article-container .article-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    gap: 1rem;
+}
+
+main .article-container .article-item p{
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+
 
 footer {
     background-color: #606060;
