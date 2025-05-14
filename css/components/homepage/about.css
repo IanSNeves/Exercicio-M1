@@ -1,0 +1,17 @@
+main .section-about {
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .section-about h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main .section-about p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}

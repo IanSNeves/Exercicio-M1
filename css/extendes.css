@@ -1,0 +1,10 @@
+@import './global.css';
+@import './variables.css';
+
+@import './components/homepage/about.css';
+@import './components/homepage/articles.css';
+@import './components/homepage/header.css';
+@import './components/homepage/sidebar.css';
+
+@import './components/shop/header_shop.css';
+@import './components/shop/book_section.css';

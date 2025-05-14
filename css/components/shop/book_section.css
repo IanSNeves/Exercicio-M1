@@ -1,0 +1,69 @@
+section.books-section h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20vh 0;
+    text-align: center;
+    padding: 0 ;
+}
+
+section.books-section .book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh;
+    max-width: 100%;
+}
+
+section.books-section .book-container .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50vh;
+    max-height: 100vh;
+    padding: 2vh;
+    gap: 0.5vh;
+}
+
+section.books-section .book-container .book-item h3{
+    max-width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+}
+
+section.books-section .book-container .book-item {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+    border-radius: 1vh;
+}
+
+
+section.books-section .book-item img{
+    max-width: 90%;
+    border-radius: 1vh;
+}
+
+section.books-section .book-item .buttons {
+    display: flex;
+    gap: 2vh;
+    justify-content: center;
+}
+
+section.books-section .book-item .buttons button{
+    padding: 2vh;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+section.books-section .book-item .buttons a {
+    text-decoration: none;
+    color: #fff;
+}

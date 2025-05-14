@@ -1,0 +1,25 @@
+root {
+  --white: #e8e8e8;
+  --gray: #3f3f3f;
+  --black: #0b0b0b;
+  --background-color: #161616; 
+  
+  /* Cores principais */
+  --primary-color: #5e2d2d; 
+  --secondary-color: #2b3a42;
+  --accent-color: #c4a46b; 
+
+  /* Tons adicionais */
+  --deep-red: #732626; 
+  --blood-red: #8b0000;
+  --dark-blue: #1a2a3a; 
+  --steel-gray: #5c5c5c; 
+  --shadow-black: #0a0a0a; 
+  --golden-glow: #a57d4a; 
+  --fog-white: #d1cfcf; 
+  --witcher-green: #3a5743; 
+  
+  --hover-color: #732626; 
+
+  --font-family: 'Merriweather', serif; 
+}

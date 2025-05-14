@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+.max-width {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+body {
+    background-color: var(--blood-red);
+    color: var(--black);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}

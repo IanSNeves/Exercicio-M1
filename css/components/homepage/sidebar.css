@@ -1,0 +1,28 @@
+aside.sidebar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+aside.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+aside.sidebar li {
+    margin: 0 1vh;
+}
+
+aside.sidebar li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside.sidebar li a:hover {
+    color: #a4d5ff;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
