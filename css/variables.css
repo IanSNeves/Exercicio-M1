@@ -1,8 +1,10 @@
-root {
+:root {
   --white: #e8e8e8;
   --gray: #3f3f3f;
   --black: #0b0b0b;
-  --background-color: #161616; 
+  --background-color: background: #000042;
+background: linear-gradient(124deg, rgba(0, 0, 66, 1) 0%, rgba(45, 0, 135, 1) 63%, rgba(0, 0, 66, 1) 100%); 
+
   
   /* Cores principais */
   --primary-color: #5e2d2d; 
@@ -23,3 +25,4 @@ root {
 
   --font-family: 'Merriweather', serif; 
 }
+

@@ -12,15 +12,40 @@
 }
 
 body {
-    background-color: var(--blood-red);
-    color: var(--black);
+    background: var(--background-color);
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--accent-color);
     text-align: center;
     padding: 1rem;
     position: relative;
     bottom: 0;
 }
+
+.secondary-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.tertiary-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color: var(--white);
+}
+
+.article-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--white);
+}
+

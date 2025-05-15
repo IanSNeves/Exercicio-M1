@@ -1,15 +1,19 @@
 header {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: transparent;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding-top: 6vh;
     max-width: 100%;
-    position: sticky;
-    top: 0;
-    border-end-start-radius: 0.5vh;
-    border-end-end-radius: 0.5vh;
+    margin-left: 20vh;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
 }
 
 header h1:hover {
@@ -20,14 +24,40 @@ header ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-right: 12vh;
 }
 
 header a {
     text-decoration: none;
-    color: #333;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 header a:hover {
-    color: #a4d5ff;
+    color: var(--hover-color);
     transition: 0.2s ease;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
