@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="shop-body">
     <header class="shop-header">
         <h1>Taverna Natura Rerum</h1>
         <nav class="categories">
             <ul>
                 <li>
-                    <a href="./estrutura.html">Início</a>
+                    <a href="./index.html">Início</a>
                 </li>
                 <li>
                     <a href="#section__books">Livros</a>
@@ -31,8 +31,8 @@
     </header>
     <main>
         <section id="section__about" class="section-about max-width">
-            <h2>Sobre a Taverna</h2>
-            <p>Natura Rerum é uma taverna, ou segundo o seu nome, hotel, localizada na cidade de Kerack. A entrada é composta por uma ampla escadaria ladeada por floreiras de madeira com aloés. Todas as mesas são cobertas com toalhas e a comida é servida com matérias-primas de primeira qualidade, diretamente do porto. </p>
+            <h2 class="secondary-title">Sobre a Taverna</h2>
+            <p class="article-text">Natura Rerum é uma taverna, ou segundo o seu nome, hotel, localizada na cidade de Kerack. A entrada é composta por uma ampla escadaria ladeada por floreiras de madeira com aloés. Todas as mesas são cobertas com toalhas e a comida é servida com matérias-primas de primeira qualidade, diretamente do porto. </p>
         </section>
         <section id="section__books" class="books-section max-width">
             <h1>Livros</h1>
@@ -42,8 +42,8 @@
                     <h3>The Witcher - O Último Desejo</h3>
                     <p>R$ 85,00</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#section__about">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -51,8 +51,8 @@
                     <h3>The Witcher - A Espada do Destino</h3>
                     <p>R$ 59,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#section__about">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -60,8 +60,8 @@
                     <h3>The Witcher - O Sangue dos Elfos</h3>
                     <p>R$ 59,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#section__about">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -69,8 +69,8 @@
                     <h3>The Witcher - Tempo do Desprezo</h3>
                     <p>R$ 69,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -78,8 +78,8 @@
                     <h3>The Witcher - O Batismo do Fogo</h3>
                     <p>R$ 79,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -87,8 +87,8 @@
                     <h3>The Witcher - A Torre da Andorinha</h3>
                     <p>R$ 89,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -96,8 +96,8 @@
                     <h3>The Witcher - A Senhora do Lago</h3>
                     <p>R$ 99,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
                 </div>
                 <div class="book-item">
@@ -105,31 +105,77 @@
                     <h3>The Witcher - Tempo de Tempestade</h3>
                     <p>R$ 109,90</p>
                     <div class="buttons">
-                        <button>Adicionar ao Carrinho</button>
-                        <button><a href="#">Sobre</a></button>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="about_book"><a href="#">Sobre</a></button>
                     </div>
         </div>            
         </section>
         <section id="section__collectibles" class="collectibles-section max-width">
             <h2>Colecionáveis</h2>
-            <div class="collectible-item">
-                <img src="/assets/Book_preview.png" alt="Colecionável 1">
-                <h3>Estátua do Geralt</h3>
-                <p>R$ 199,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="collectible-item">
-                <img src="/assets/Book_preview.png" alt="Colecionável 2">
-                <h3>Espada de Prata</h3>
-                <p>R$ 299,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="collectible-item">
-                <img src="/assets/Book_preview.png" alt="Colecionável 3">
-                <h3>Amuleto de Geralt</h3>
-                <p>R$ 149,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
+            <ul>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 1">
+                    <h3>Estátua do Geralt</h3>
+                    <p>R$ 199,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 2">
+                    <h3>Espada de Prata</h3>
+                    <p>R$ 299,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 3">
+                    <h3>Amuleto de Geralt</h3>
+                    <p>R$ 149,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 4">
+                    <h3>Estátua do Ciri</h3>
+                    <p>R$ 199,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 5">
+                    <h3>Amuleto da Ciri</h3>
+                    <p>R$ 149,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 6">
+                    <h3>Estátua do Yennefer</h3>
+                    <p>R$ 199,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 7">
+                    <h3>Amuleto da Yennefer</h3>
+                    <p>R$ 149,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 8">
+                    <h3>Estátua do Triss</h3>
+                    <p>R$ 199,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+                <li class="collectible-item">
+                    <img src="/assets/Book_preview.png" alt="Colecionável 9">
+                    <h3>Amuleto da Triss</h3>
+                    <p>R$ 149,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </li>
+            </ul>
         </section>
         <section id="section__swords" class="swords-section max-width">
             <h2>Espadas</h2>

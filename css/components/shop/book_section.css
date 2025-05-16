@@ -37,9 +37,9 @@ section.books-section .book-container .book-item h3{
 }
 
 section.books-section .book-container .book-item {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    background-color: var(--dark-blue);
+    gap: 2vh;
     border-radius: 1vh;
 }
 
@@ -57,12 +57,30 @@ section.books-section .book-item .buttons {
 
 section.books-section .book-item .buttons button{
     padding: 2vh;
-    background-color: #333;
+    background-color: var(--secondary-color);
     color: #fff;
     border: none;
     border-radius: 1vh;
     cursor: pointer;
 }
+
+section.books-section .book-item .buttons .add-to-cart{
+    background-color: var(--witcher-green);
+}
+section.books-section .book-item .buttons .add-to-cart:hover{
+    background-color: var(--golden-glow);
+    transition: 0.4s ease;
+}
+
+section.books-section .book-item .buttons .about_book{
+    background-color: var(--deep-red);
+}
+
+section.books-section .book-item .buttons .about_book:hover{
+    background-color: var(--blood-red);
+    transition: 0.4s ease;
+}
+
 section.books-section .book-item .buttons a {
     text-decoration: none;
     color: #fff;
