@@ -5,6 +5,10 @@
     font-family: var(--font-family);
 }
 
+body.body__home {
+    background: linear-gradient(124deg, rgba(0, 0, 66, 1) 0%, rgba(45, 0, 135, 1) 63%, rgba(0, 0, 66, 1) 100%);
+}
+
 .max-width {
     max-width: 90%;
     margin: 0 auto;
@@ -16,7 +20,7 @@
 }
 
 body {
-    background: var(--background-color);
+    background: var(--bestiary-background-gradient);
     color: var(--white);
 }
 
