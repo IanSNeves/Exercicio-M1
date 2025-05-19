@@ -1,0 +1,34 @@
+header.header__bestiario {
+    background-color: var(--bestiary-dark-secondary-color);
+    color: var(--bestiary-white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.header__bestiario nav.navbar_bestiario .menu{
+    display: flex;
+    gap: 1rem;
+    float: left;
+}
+
+header.header__bestiario nav.navbar_bestiario ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header.header__bestiario nav.navbar_bestiario .submenu{
+    display: none;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+
+

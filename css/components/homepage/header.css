@@ -1,4 +1,4 @@
-header {
+header.header__home {
     background-color: transparent;
     color: var(--white);
     display: flex;
@@ -8,38 +8,38 @@ header {
     max-width: 100%;
 }
 
-header h1 {
+header.header__home h1 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--white);
     text-decoration: none;
 }
 
-header h1:hover {
+header.header__home h1:hover {
     cursor: default;
 }
 
-header ul {
+header.header__home ul {
     list-style: none;
     display: flex;
     gap: 1rem;
     margin-right: 12vh;
 }
 
-header a {
+header.header__home a {
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-header a:hover {
+header.header__home a:hover {
     color: var(--hover-color);
     transition: 0.2s ease;
 }
 
 @media (max-width: 768px) {
-    header {
+    header.header__home {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -47,13 +47,13 @@ header a:hover {
         border-bottom: 1px solid var(--white);
     }
 
-    header ul {
+    header.header__home ul {
         flex-direction: column;
         gap: 0.5rem;
         margin: 1rem 0 0 0;
     }
 
-    header a {
+    header.header__home a {
         font-size: 1rem;
     }
 

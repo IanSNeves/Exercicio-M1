@@ -10,7 +10,7 @@ main .article-container .article-item {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding-left: 20vh;
+    padding-left: 24vh;
     gap: 2rem;
 }
 
