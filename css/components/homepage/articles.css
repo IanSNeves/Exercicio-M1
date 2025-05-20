@@ -1,8 +1,13 @@
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
 main .article-container {
     gap: 2rem;
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -10,7 +15,7 @@ main .article-container .article-item {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding-left: 24vh;
+    padding-left: 12vh;
     gap: 2rem;
 }
 
@@ -31,6 +36,11 @@ main .article-container .article-img-container img{
 }
 
 @media screen and (max-width: 1022px) {
+    .conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
     main .article-container {
         flex-direction: column;
         padding: 12vh;

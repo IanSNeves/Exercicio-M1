@@ -23,13 +23,13 @@
 
   /* Bestiario */
     --bestiary-white: #ffffff;
-  --bestiary-gray: #f0f0f0;
-  --bestiary-black: #1c1c1c;
+  --bestiary-gray: #232430;
+  --bestiary-black: #0f0f0f;
   --bestiary-background-color: #f9fafe;
   --bestiary-primary-color: #23356d;
   --bestiary-secondary-color: #4058a3;
   --bestiary-dark-secondary-color: #1a264d;
-  --bestiary-tertiary-color: #e0e6f6;
+  --bestiary-tertiary-color: #9eb8ff;
   --bestiary-light-tertiary-color: #f4f6fb;
   --bestiary-text-color: #2a2a2a;
   --bestiary-hover-color: #31488c;

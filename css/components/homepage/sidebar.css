@@ -1,12 +1,7 @@
 aside.sidebar {
-    position: fixed;
-    right: 12vh;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 70vh;
-    margin-top: 12vh;
-    border-radius: 1.5vh;
 }
 
 
@@ -30,22 +25,5 @@ aside.sidebar li a:hover {
     transition: 0.3s ease;
 }
 
-@media screen and (max-width: 1022px) {
-    aside.sidebar {
-        position: static;
-        width: 100%;
-    }
 
-    aside.sidebar h3 {
-        font-size: 2rem;
-    }
-    
-}
 
-@media screen and (max-width: 1480px) {
-    aside.sidebar {
-        max-width: 30%;
-        right: 0;
-    }
-
-}
