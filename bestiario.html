@@ -29,7 +29,7 @@
                     </ul>
                 </li>
                 <li id="necrofagos">
-                    <p>Necrofágos</p>
+                    <p class="menu-item-toggle" data-target-submenu="#lista-necrofagos">Necrofágos</p>
                     <ul id="lista-necrofagos" class="submenu">
                         <li>
                             <a href="#">Ghouls</a>
@@ -46,7 +46,7 @@
                     </ul>
                 </li>
                 <li id="ogroides">
-                    <p>Ogroides</p>
+                    <p class="menu-item-toggle" data-target-submenu="#lista-ogroides">Ogroides</p>
                     <ul id="lista-ogroides" class="submenu">
                         <li>
                             <a href="#">Troll de Pedra</a>
@@ -60,7 +60,7 @@
                     </ul>
                 </li>
                 <li id="vampiros">
-                    <p>Vampiros</p>
+                    <p class="menu-item-toggle" data-target-submenu="#lista-vampiros">Vampiros</p>
                         <ul id="lista-vampiros" class="submenu">
                             <li>
                                 <a href="#">Ekimmara</a>
@@ -77,7 +77,7 @@
                         </ul>   
                 </li>
                 <li id="espectros">
-                    <p >Espectros</p>
+                    <p class="menu-item-toggle" data-target-submenu="#lista-espectros">Espectros</p>
                     <ul id="lista-espectros" class="submenu">
                         <li>
                             <a href="#">Wraith</a>
@@ -99,25 +99,6 @@
     </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.burguer').click(function(){
-                $('.navbar_bestiario').slideToggle();
-            })
-            
-            $('.menu-item-toggle').click(function(e){
-                e.preventDefault();
-                
-            var selectSubmenu = $(this).data('target-submenu');
-            var $targetSubmenu = $(selectSubmenu);
-
-            $('.submenu').not($targetSubmenu).slideUp();
-
-            $targetSubmenu.slideToggle();
-            })
-
-
-        })
-    </script>
+    <script type="text/javascript" src="/SCRIPT/bestiario.js"></script>
 </body>
 </html>
