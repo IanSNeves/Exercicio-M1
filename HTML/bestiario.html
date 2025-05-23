@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestiário Bruxo</title>
     <link rel="stylesheet" href="/css/extends.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="body__bestiario">
     <header class="header__bestiario">
@@ -18,16 +21,16 @@
         </div>
         <nav class="navbar_bestiario">
             <ul class="menu"> 
-                <li>
-                    <p>Nossas páginas</p>
-                    <ul class="submenu">
+                <li id="paginas">
+                    <p class="menu-item-toggle" data-target-submenu="#lista-paginas">Nossas páginas</p>
+                    <ul id="lista-paginas" class="submenu">
                         <li><a href="./index.html">Início</a></li>
                         <li><a href="./shop.html">Loja</a></li>
                     </ul>
                 </li>
-                <li>
+                <li id="necrofagos">
                     <p>Necrofágos</p>
-                    <ul class="submenu">
+                    <ul id="lista-necrofagos" class="submenu">
                         <li>
                             <a href="#">Ghouls</a>
                         </li>
@@ -42,9 +45,9 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li id="ogroides">
                     <p>Ogroides</p>
-                    <ul class="submenu">
+                    <ul id="lista-ogroides" class="submenu">
                         <li>
                             <a href="#">Troll de Pedra</a>
                         </li>
@@ -56,26 +59,26 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li id="vampiros">
                     <p>Vampiros</p>
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Ekimmara</a>
-                        </li>
-                        <li>
-                            <a href="#">Fleder</a>
-                        </li>
-                        <li>
-                            <a href="#">Katakan</a>
-                        </li>
-                        <li>
-                            <a href="#">Vampiro Superior</a>
-                        </li> 
-                    </ul>   
+                        <ul id="lista-vampiros" class="submenu">
+                            <li>
+                                <a href="#">Ekimmara</a>
+                            </li>
+                            <li>
+                                <a href="#">Fleder</a>
+                            </li>
+                            <li>
+                                <a href="#">Katakan</a>
+                            </li>
+                            <li>
+                                <a href="#">Vampiro Superior</a>
+                            </li> 
+                        </ul>   
                 </li>
-                <li>
-                    <p>Espectros</p>
-                    <ul class="submenu">
+                <li id="espectros">
+                    <p >Espectros</p>
+                    <ul id="lista-espectros" class="submenu">
                         <li>
                             <a href="#">Wraith</a>
                         </li>
@@ -94,5 +97,27 @@
     </header>
     <main>
     </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.burguer').click(function(){
+                $('.navbar_bestiario').slideToggle();
+            })
+            
+            $('.menu-item-toggle').click(function(e){
+                e.preventDefault();
+                
+            var selectSubmenu = $(this).data('target-submenu');
+            var $targetSubmenu = $(selectSubmenu);
+
+            $('.submenu').not($targetSubmenu).slideUp();
+
+            $targetSubmenu.slideToggle();
+            })
+
+
+        })
+    </script>
 </body>
 </html>

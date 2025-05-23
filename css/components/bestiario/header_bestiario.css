@@ -36,14 +36,6 @@ header.header__bestiario .navbar_bestiario .menu {
     max-width: 100%;
 }
 
-header.header__bestiario .navbar_bestiario li:hover .submenu {
-    display: block;
-    position: absolute;
-    background-color: var(--bestiary-dark-secondary-color);
-    padding: 2vh;
-    left: 0;
-}
-
 header.header__bestiario .navbar_bestiario .menu li {
     position: relative;
     text-align: center;
@@ -104,33 +96,45 @@ header.header__bestiario .header-container form button:hover {
 
 @media screen and (max-width: 768px) {
     header .header-container {
-        max-width: 100%;
-        margin: 0;
+        flex-direction: column;
         padding-top: 1rem;
+    }
+
+    header .header-container form {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 4vh;
-}
+        gap: 0.5rem;
+    }
+
+    header .header-container h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--bestiary-white);
+    }
 
 
     header.header__bestiario .navbar_bestiario {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         padding: 2rem;
     }
 
-    header.header__bestiario .navbar_bestiario li:hover .submenu {
-    display: block;
-    position: fixed;
+    /* header.header__bestiario .navbar_bestiario ul li ul {
+    display: flex;
     background-color: var(--bestiary-gray);
     padding: 2vh;
     left: 12rem;
     top: 7.5rem;
-    width: 20rem;
+    max-width: 12rem;
     height: auto;
     border-radius: 6px;
+    } */
+
+    header.header__bestiario .navbar_bestiario ul li ul.submenu-ativo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
 
@@ -148,7 +152,9 @@ header.header__bestiario .header-container form button:hover {
     }
 
     header.header__bestiario img {
-        display: block;
+        display: block;position: fixed;
+        top: 1rem;
+        left: 1.8rem;
         max-width: 8vh;
         cursor: pointer;
     }

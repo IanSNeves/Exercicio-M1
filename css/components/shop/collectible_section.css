@@ -1,0 +1,120 @@
+
+
+section.collectibles-section{
+    padding-top: 24rem;
+}
+
+section.collectibles-section h2 {
+    border-top: 1px solid var(--white);
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+section.collectibles-section .collectible-item {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.collectibles-section .collectible-item img {
+    width: 110vh;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+section.collectibles-section .collectible-item h3 {
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+section.collectibles-section .collectible-item p {
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+}
+
+section.collectibles-section .collectible-item button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1vh;
+    background-color: var(--witcher-green);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+section.collectibles-section .collectible-item button:hover {
+    background-color: var(--golden-glow);
+    transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    section.collectibles-section {
+        padding-top: 12rem; 
+    }
+
+    section.collectibles-section h2 {
+        font-size: 2rem;  
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    section.collectibles-section .collectible-item img {
+        width: 100%;
+        max-width: 560px;  
+        height: auto;     
+        margin-bottom: 1.5rem; 
+         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
+    }
+
+    section.collectibles-section .collectible-item h3 {
+        font-size: 1.6rem; 
+    }
+
+    section.collectibles-section .collectible-item p {
+        font-size: 1.2rem; 
+    }
+
+    section.collectibles-section .collectible-item button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem;    
+        border-radius: 0.5rem;  
+    }
+}
+
+@media (max-width: 480px) {
+    section.collectibles-section {
+        padding-top: 6rem; 
+    }
+
+    section.collectibles-section h2 {
+        font-size: 1.7rem;  
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    section.collectibles-section .collectible-item img {
+        width: 95%;      
+        max-width: 300px; 
+        margin-bottom: 1rem;
+    }
+
+    section.collectibles-section .collectible-item h3 {
+        font-size: 1.4rem;
+    }
+
+    section.collectibles-section .collectible-item p {
+        font-size: 1.1rem;
+    }
+
+    section.collectibles-section .collectible-item button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}

@@ -5,6 +5,10 @@
     font-family: var(--font-family);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 body.body__home {
     background: linear-gradient(124deg, rgba(0, 0, 66, 1) 0%, rgba(45, 0, 135, 1) 63%, rgba(0, 0, 66, 1) 100%);

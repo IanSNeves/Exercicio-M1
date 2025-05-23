@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
     <link rel="stylesheet" href="/css/extends.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,13 +17,13 @@
         <nav class="categories">
             <ul>
                 <li>
-                    <a href="./index.html">Início</a>
+                    <a href="/index.html">Início</a>
                 </li>
                 <li>
                     <a href="#section__books">Livros</a>
                 </li>
                 <li>
-                    <a href="#section__collectibles">Colecionáveis</a>
+                    <a href="#collectible">Colecionáveis</a>
                 </li>
                 <li>
                     <a href="#section__swords">Espadas</a>
@@ -112,70 +114,80 @@
         </section>
         <section id="section__collectibles" class="collectibles-section max-width">
             <h2>Colecionáveis</h2>
-            <ul>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 1">
-                    <h3>Estátua do Geralt</h3>
-                    <p>R$ 199,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 2">
-                    <h3>Espada de Prata</h3>
-                    <p>R$ 299,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-            </ul>
-            <ul>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 3">
-                    <h3>Amuleto de Geralt</h3>
-                    <p>R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-            </ul>
-            <ul>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 4">
-                    <h3>Estátua do Ciri</h3>
-                    <p>R$ 199,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 5">
-                    <h3>Amuleto da Ciri</h3>
-                    <p>R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-            </ul>
-            <ul>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 6">
-                    <h3>Estátua do Yennefer</h3>
-                    <p>R$ 199,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 7">
-                    <h3>Amuleto da Yennefer</h3>
-                    <p>R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-            </ul>
-            <ul>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 8">
-                    <h3>Estátua do Triss</h3>
-                    <p>R$ 199,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-                <li class="collectible-item">
-                    <img src="/assets/Book_preview.png" alt="Colecionável 9">
-                    <h3>Amuleto da Triss</h3>
-                    <p>R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                </li>
-            </ul>
+            <div id="carrousel">
+                <ul>
+                    <li id="collectible" class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 1">
+                        <h3>Estátua do Geralt</h3>
+                        <p>R$ 199,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 2">
+                        <h3>Espada de Prata</h3>
+                        <p>R$ 299,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 3">
+                        <h3>Amuleto de Geralt</h3>
+                        <p>R$ 149,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 4">
+                        <h3>Estátua do Ciri</h3>
+                        <p>R$ 199,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 5">
+                        <h3>Amuleto da Ciri</h3>
+                        <p>R$ 149,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 6">
+                        <h3>Estátua do Yennefer</h3>
+                        <p>R$ 199,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 7">
+                        <h3>Amuleto da Yennefer</h3>
+                        <p>R$ 149,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 8">
+                        <h3>Estátua do Triss</h3>
+                        <p>R$ 199,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="collectible-item">
+                        <img src="/assets/Anotação 2025-05-13 100553.png" alt="Colecionável 9">
+                        <h3>Amuleto da Triss</h3>
+                        <p>R$ 149,90</p>
+                        <button>Adicionar ao Carrinho</button>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="section__swords" class="swords-section max-width">
             <h2>Espadas</h2>
@@ -199,5 +211,18 @@
             </div>
         </section>
     </main>
+
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#carrousel').slick({
+                autoplay:true,
+                autoplaySpeed: 2500,
+            })
+        })
+    </script>
 </body>
 </html>
